@@ -1,10 +1,9 @@
-import React from 'react'
+import "../scss/section/contactpage.scss";
 
-import '../scss/section/contactpage.scss'
+import { ContactBlock } from "../components";
+import { FC } from "react";
 
-import { ContactBlock } from '../components'
-
-const Contacts = () => {
+const Contacts: FC = () => {
   return (
     <section className="contects-page">
       <div className="container">
@@ -14,7 +13,7 @@ const Contacts = () => {
         <ContactBlock />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contacts
+export default Contacts;

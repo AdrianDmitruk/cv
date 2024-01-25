@@ -1,12 +1,12 @@
-import React from 'react'
+import { FC } from "react";
 
-import '../scss/section/quote.scss'
-import { useTranslation } from 'react-i18next'
-import qu from '../assets/svg/qu.svg'
-import cub from '../assets/svg/cub1.svg'
+import "../scss/section/quote.scss";
+import { useTranslation } from "react-i18next";
+import qu from "../assets/svg/qu.svg";
+import cub from "../assets/svg/cub1.svg";
 
-export const Quote = () => {
-  const { t } = useTranslation()
+export const Quote: FC = () => {
+  const { t } = useTranslation();
 
   return (
     <section className="quote">
@@ -14,11 +14,11 @@ export const Quote = () => {
       <div className="container quote__container">
         <h3 className="quote__title">
           <img className="quote__icon-first" src={qu} alt="qu" />
-          {t('quote')}
+          {t("quote")}
           <img className="quote__icon-second" src={qu} alt="qu" />
         </h3>
         <p className="quote__subtitle">- Dr. Who</p>
       </div>
     </section>
-  )
-}
+  );
+};

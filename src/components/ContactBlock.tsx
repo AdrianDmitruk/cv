@@ -1,11 +1,11 @@
-import React from "react";
+import { FC } from "react";
 
 import "../scss/section/contactblock.scss";
 import { useTranslation } from "react-i18next";
 import email from "../assets/svg/email.svg";
 import discord from "../assets/svg/discord.svg";
 
-export const ContactBlock = () => {
+export const ContactBlock: FC = () => {
   const { t } = useTranslation();
   return (
     <div className="contact__wrap">

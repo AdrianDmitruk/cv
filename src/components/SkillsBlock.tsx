@@ -1,9 +1,9 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
-import '../scss/section/skillsblock.scss'
+import { FC } from "react";
+import { useTranslation } from "react-i18next";
+import "../scss/section/skillsblock.scss";
 
-export const SkillsBlock = () => {
-  const { t } = useTranslation()
+export const SkillsBlock: FC = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="skills__box-card">HTML | CSS | SASS</div>
@@ -15,7 +15,7 @@ export const SkillsBlock = () => {
       <div className="skills__box-card">Material-UI</div>
       <div className="skills__box-card">GIT</div>
       <div className="skills__box-card">Gulp | Webpack</div>
-      <div className="skills__box-card">{t('skillsname')}</div>
+      <div className="skills__box-card">{t("skillsname")}</div>
     </>
-  )
-}
+  );
+};
