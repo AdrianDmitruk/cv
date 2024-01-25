@@ -1,0 +1,75 @@
+.projects {
+  &__main {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  &__main-box {
+    border: 1px solid var(--gray);
+    width: 329px;
+  }
+  &__box-img {
+    border-bottom: 1px solid var(--gray);
+    display: block;
+    width: 331px;
+    height: 203px;
+  }
+  &__box-state {
+    border-bottom: 1px solid var(--gray);
+    padding: 8px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: var(--font400);
+    color: var(--gray);
+  }
+  &__box-info {
+    padding: 16px;
+  }
+  &__info-name {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: var(--font500);
+    color: var(--white);
+  }
+  &__info-desc {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: var(--font400);
+    color: var(--gray);
+    margin: 16px 0;
+  }
+  &__info-btn {
+    max-width: 244px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: var(--font500);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__btn-first {
+    padding: 8px 16px;
+    border: 1px solid var(--primary);
+    color: var(--white);
+  }
+  &__btn-second {
+    padding: 8px 16px;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+  }
+  &__btn-first:hover {
+    background: rgba(199, 120, 221, 0.2);
+  }
+  &__btn-second:hover {
+    background: rgba(171, 178, 191, 0.2);
+  }
+  @media (max-width: 1071px) {
+    &__main {
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
+}

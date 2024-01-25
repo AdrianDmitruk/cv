@@ -1,0 +1,20 @@
+.error {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    margin-bottom: 30px;
+    font-weight: var(--font600);
+    font-size: 120px;
+    line-height: 103px;
+    color: var(--gray);
+  }
+  &__link {
+    font-weight: var(--font400);
+    font-size: 43px;
+    line-height: 48px;
+    color: var(--white);
+  }
+}

@@ -1,0 +1,118 @@
+.about-page {
+  padding-top: 53px;
+  padding-bottom: 148px;
+  @media (max-width: 826px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &__title {
+    margin-bottom: 46px;
+  }
+  &__wrpa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 112px;
+  }
+  &__wrpa-left {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: var(--font400);
+    color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 515px;
+  }
+  &__left-text:nth-child(2) {
+    margin: 15px 0;
+  }
+  &__wrpa-right {
+    width: 42%;
+    display: block;
+  }
+  &__skills {
+    margin-bottom: 83px;
+  }
+  &__skills-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: var(--font500);
+    color: var(--white);
+    margin-bottom: 48px;
+  }
+  &__skills-title span {
+    color: var(-- primary);
+  }
+  &__skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  &__fact-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: var(--font500);
+    color: var(--white);
+    margin-bottom: 26px;
+  }
+  &__fact-title span {
+    color: var(-- primary);
+  }
+  &__fact-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  &__card-box {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: var(--font400);
+    color: var(--gray);
+    padding: 8px;
+    border: 1px solid var(--gray);
+  }
+  @media (max-width: 1030px) {
+    &__skills-content {
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 826px) {
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__wrpa {
+      margin-bottom: 40px;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+    &__wrpa-right {
+      margin-bottom: 30px;
+    }
+    &__wrpa-left {
+      max-width: 100%;
+    }
+    &__left-text {
+      text-align: center;
+    }
+    &__left-text:nth-child(2) {
+      margin: 15px 0;
+    }
+    &__wrpa-right {
+      width: 100%;
+    }
+    &__skills-title {
+      margin-bottom: 30px;
+    }
+    &__skills {
+      margin-bottom: 40px;
+    }
+    &__fact-card {
+      justify-content: center;
+    }
+  }
+}

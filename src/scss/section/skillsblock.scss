@@ -1,0 +1,16 @@
+.skills {
+  &__box-card {
+    border: 1px solid #abb2bf;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: var(--font600);
+    color: var(--white);
+  }
+
+  @media (max-width: 628px) {
+    &__box-carding {
+      width: 182px;
+    }
+  }
+}

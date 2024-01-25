@@ -1,0 +1,123 @@
+.first {
+  padding-bottom: 112px;
+  padding-top: 62px;
+  @media (max-width: 900px) {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    max-width: 537px;
+    width: 100%;
+    padding-top: 74px;
+    padding-bottom: 121px;
+  }
+  &__left-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: var(--font600);
+    color: var(--white);
+    margin-bottom: 32px;
+  }
+  &__left-index {
+    color: var(--primary);
+  }
+  &__left-subtitle {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: var(--font400);
+    color: var(--gray);
+    margin-bottom: 24px;
+  }
+  &__left-subtitle a {
+    color: var(--primary);
+  }
+  &__left-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: var(--font500);
+    color: var(--white);
+    border: 1px solid var(--primary);
+    cursor: pointer;
+  }
+  &__left-btn:hover {
+    background: rgba(199, 120, 221, 0.2);
+    border: 1px solid #c778dd;
+  }
+  &__right {
+    position: relative;
+    max-width: 469px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__right-img {
+    max-width: 83%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+  }
+  &__right-bg {
+    position: absolute;
+    left: 0;
+    top: 84px;
+    z-index: 0;
+  }
+  &__right-dots {
+    position: absolute;
+    right: 16px;
+    top: 246px;
+    z-index: 4;
+  }
+  &__right-footer {
+    border: 1px solid #abb2bf;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__footer-title {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: var(--font500);
+    color: var(--gray);
+  }
+  &__title-link {
+    color: var(--white);
+  }
+  @media (max-width: 900px) {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__left {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  @media (max-width: 554px) {
+    &__left-title {
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    &__left-subtitle {
+      text-align: center;
+    }
+    &__left-btn {
+      margin: 0 auto;
+    }
+    &__right-img {
+      max-width: 56%;
+    }
+    &__right-dots {
+      width: 56px;
+      height: 56px;
+      right: 10px;
+    }
+  }
+}

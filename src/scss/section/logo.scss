@@ -1,0 +1,19 @@
+.header{
+    &__logo{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-link{
+        margin-right: 8px;
+        display: flex;
+        width: 16px;
+        height: 16px;
+    }
+    &__logo-name{
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: var(--font700);
+        color: var(--white);
+    }
+}
+
